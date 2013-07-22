@@ -1139,8 +1139,31 @@
             <maven-resource group="org.jboss.remotingjmx" artifact="remoting-jmx"/>
         </module-def>
 
+        <module-def name="org.bouncycastle">
+            <maven-resource group="org.bouncycastle" artifact="bcprov-jdk16"/>
+            <maven-resource group="org.bouncycastle" artifact="bcmail-jdk16"/>
+        </module-def>
+
+        <module-def name="com.fasterxml.jackson.core.jackson-core">
+            <maven-resource group="com.fasterxml.jackson.core" artifact="jackson-core" />
+        </module-def>
+
+        <module-def name="com.fasterxml.jackson.core.jackson-annotations">
+            <maven-resource group="com.fasterxml.jackson.core" artifact="jackson-annotations" />
+        </module-def>
+
+        <module-def name="com.fasterxml.jackson.core.jackson-databind">
+            <maven-resource group="com.fasterxml.jackson.core" artifact="jackson-databind" />
+        </module-def>
+        
+        <module-def name="com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider">
+            <maven-resource group="com.fasterxml.jackson.jaxrs" artifact="jackson-jaxrs-json-provider" />
+            <maven-resource group="com.fasterxml.jackson.jaxrs" artifact="jackson-jaxrs-base" />
+            <maven-resource group="com.fasterxml.jackson.module" artifact="jackson-module-jaxb-annotations" />
+        </module-def>
+
         <module-def name="org.jboss.resteasy.resteasy-atom-provider">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-atom-provider"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-atom-provider" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-cdi">
@@ -1148,36 +1171,51 @@
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-crypto">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-crypto"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-crypto" jandex="true"/>
+        </module-def>
+
+        <module-def name="org.jboss.resteasy.resteasy-hibernatevalidator-provider">
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-hibernatevalidator-provider" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-jackson-provider">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jackson-provider"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jackson-provider" jandex="true"/>
+        </module-def>
+
+        <module-def name="org.jboss.resteasy.resteasy-jackson2-provider">
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jackson2-provider" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-jaxb-provider">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jaxb-provider"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jaxb-provider" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-jettison-provider">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jettison-provider"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jettison-provider" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-jaxrs">
             <maven-resource group="org.jboss.resteasy" artifact="async-http-servlet-3.0"/>
             <maven-resource group="org.jboss.resteasy" artifact="resteasy-jaxrs"/>
-        </module-def>
-
-        <module-def name="org.jboss.resteasy.resteasy-client">
             <maven-resource group="org.jboss.resteasy" artifact="resteasy-client"/>
         </module-def>
 
+<<<<<<< HEAD
+        <module-def name="org.jboss.resteasy.resteasy-client">
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-client"/>
+        </module-def>
+=======
+        <module-def name="org.jboss.resteasy.jose-jwt">
+            <maven-resource group="org.jboss.resteasy" artifact="jose-jwt"/>
+         </module-def>
+>>>>>>> e29d33c... Updated resteasy to 3.0.2 and jackson to 2.2.1
+
         <module-def name="org.jboss.resteasy.resteasy-jsapi">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jsapi"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jsapi" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-multipart-provider">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-multipart-provider"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-multipart-provider" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-validator-provider-11">
@@ -1185,8 +1223,13 @@
         </module-def>
 
         <module-def name="org.jboss.resteasy.resteasy-yaml-provider">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-yaml-provider"/>
+            <maven-resource group="org.jboss.resteasy" artifact="resteasy-yaml-provider" jandex="true"/>
         </module-def>
+
+        <module-def name="org.jboss.resteasy.skeleton-key">
+            <maven-resource group="org.jboss.resteasy" artifact="skeleton-key-as7"/>
+            <maven-resource group="org.jboss.resteasy" artifact="skeleton-key-core"/>
+         </module-def>
 
         <module-def name="org.jboss.security.negotiation">
             <maven-resource group="org.jboss.security" artifact="jboss-negotiation-common"/>
